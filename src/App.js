@@ -13,10 +13,11 @@ class App extends Component {
           </p>
         </header>
         <article className="App-bio">
-          Middle Content Here
+          <div>Picture</div>
+          <div>Bio</div>
         </article>
         <article className="App-apps">
-          App Content Here
+          Apps I've Built
         </article>
         <footer className="App-footer">
           <ul>
