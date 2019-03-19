@@ -62,11 +62,11 @@ class App extends Component {
 					</div>
 
 				<footer className="App-footer">
-					<ul>
+					
 						<img src={linkedin} className="socialBtns" alt="linkedIn" />
 						<img src={twitter} className="socialBtns" alt="twitter" />
 						<img src={github} className="socialBtns" alt="github" />
-					</ul>
+					
 				</footer>
 			</div>
 		);
