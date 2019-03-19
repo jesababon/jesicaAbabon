@@ -22,6 +22,7 @@ h1{
   /* animation: App-logo-spin infinite 50s linear; */
   height: 60%;
   pointer-events: none;
+  padding: 1vw;
 }
 
 .App-header {
@@ -30,58 +31,68 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2vw;
   color: gray;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100vh;
+
+}
+
+content{
+  position:absolute;
+  top: 15vw;
+  bottom: 5vh;
+  overflow:auto;
 }
 
 .App-bio{
-  background-color: grey;
+  background-color: lightgray;
   grid-area: main;
   align-items: center;
   display: grid;
-  grid-gap: 2vw;
+  grid-gap: 1vw;
   grid-template-columns: auto auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2vw;
+  padding: 2vh;
+  color: black;
 
 }
 
 .App-apps{
-  background-color: grey;
+  background-color: lightgray;
   grid-area: main2;
   align-items: center;
   /* display: grid;*/ /*brings down to center */
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 form, .Contact-form{
   grid-area: form;
-  display: inline;
+  display: inline-flexbox;
   padding: 1vw;
   font-family: inherit;
   font-size: 2vw;
+  /* height: 10vh; */
 
 }
 
 .formBtn{
   background-color:#0d5;
-  /* height: auto; */
-  /* line-height: normal; */
-  /* width: auto; */
-  /* font-family: inherit; */
   font-weight: 800;
   color: white;
-  font-size: 1vw;
+  font-size: 2vw;
   border-radius: 25px;
   padding: 1vh;
 
 }
 
 input[type=text], textarea{
-  width: fill;
+  width: stretch;
   padding: 1vw; 
   /* border: 1px solid #0d5;  */
   border-radius: 1vw; 
@@ -109,6 +120,9 @@ input[type=text]:focus, textarea:focus {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: absolute;
+  width: 100vh;
+  bottom: 0px;
 }
 
 .socialBtns{
@@ -118,13 +132,4 @@ input[type=text]:focus, textarea:focus {
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

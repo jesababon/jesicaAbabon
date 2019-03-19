@@ -14,39 +14,39 @@ class App extends Component {
 					<h1>Jesica Ababon</h1>
 					<h2>Full Stack Web Developer</h2>
 				</header>
-				<article className="App-bio">
-					<div>
-						<img src={profilePic} className="profilePic" alt="myFace" />
-						<h5>
-							Hi! I’m Jes, web developer that loves finding simple solutions to
-							complicated problems.
-						</h5>
-						<h6>
-							Experienced in HTML, CSS, Javascript (Node.js, Express.js,
-							React.js), API integrations, and postgreSQL.
-						</h6>
-					</div>
-				</article>
-				<article className="App-apps">Some of My Apps</article>
-				<div className="Contact-form">
-					<form>
-						<label>
+				<content>
+					<article className="App-bio">
+						<div>
+							<img src={profilePic} className="profilePic" alt="myFace" />
+							<h5>
+								Hi! I’m Jes, web developer that loves finding simple solutions
+								to complicated problems.
+							</h5>
+							<h6>
+								Experienced in HTML, CSS, Javascript (Node.js, Express.js,
+								React.js), API integrations, and postgreSQL.
+							</h6>
+						</div>
+					</article>
+					<article className="App-apps">Some of My Apps</article>
+					<div className="Contact-form">
+						<h3>Want to contact me?</h3>
+						<form>
+							<label>
 								Name:
-								<input type="text" name="name"/>
+								<input type="text" name="name" />
 								Email:
-								<input type="text" name="email"/>              
-              	Subject:
-								<input type="text" name="subject"/>
-							  Message:
-								<textarea name="message"/>
+								<input type="text" name="email" />
+								Subject:
+								<input type="text" name="subject" />
+								Message:
+								<textarea name="message" />
+								<input type="submit" value="SUBMIT" className="formBtn" />
+							</label>
+						</form>
+					</div>
+				</content>
 
-						<input type="submit" value="SUBMIT" className='formBtn'/
-            >
-            </label>
-            
-
-					</form>
-				</div>
 				<footer className="App-footer">
 					<ul>
 						<img src={linkedin} className="socialBtns" alt="linkedIn" />
