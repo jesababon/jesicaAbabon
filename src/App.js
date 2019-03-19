@@ -4,6 +4,9 @@ import profilePic from "./images/profilePic.png";
 import twitter from "./images/twitter.svg";
 import github from "./images/github.svg";
 import linkedin from "./images/linkedin.svg";
+import fatalencounters from "./images/fatalencounters.gif";
+import savvysapian from "./images/savvysapian.gif";
+import maddash from "./images/maddash.gif";
 import "./App.css";
 
 class App extends Component {
@@ -14,7 +17,6 @@ class App extends Component {
 					<h1>Jesica Ababon</h1>
 					<h2>Full Stack Web Developer</h2>
 				</header>
-				<content>
 					<article className="App-bio">
 						<div>
 							<img src={profilePic} className="profilePic" alt="myFace" />
@@ -28,24 +30,36 @@ class App extends Component {
 							</h6>
 						</div>
 					</article>
-					<article className="App-apps">Some of My Apps</article>
+					<article className="App-apps">
+						<h3>Some of My apps</h3>
+						<img src={savvysapian} className="savvySapian" alt="savvysapian" />
+
+						<img src={fatalencounters} className="fatalEncounters" alt="fatalencounters" />
+						
+						<img src={maddash} className="madDash" alt="madDash" />
+					
+					</article>
 					<div className="Contact-form">
 						<h3>Want to contact me?</h3>
 						<form>
 							<label>
-								Name:
-								<input type="text" name="name" />
-								Email:
+								<div className='infoInput'>
+								<p>Name: </p>
+								<input type="text" name="name"/>
+								<p>Email: </p>
 								<input type="text" name="email" />
-								Subject:
-								<input type="text" name="subject" />
-								Message:
+								<p>Subject: </p>
+								<input type="text" name="subject"/>
+								</div>
+								<div className='messageInput'>
+								<p>Message: </p>
 								<textarea name="message" />
-								<input type="submit" value="SUBMIT" className="formBtn" />
+								<p>
+								<input type="submit" value="SUBMIT" className="formBtn" /></p>
+								</div>
 							</label>
 						</form>
 					</div>
-				</content>
 
 				<footer className="App-footer">
 					<ul>
