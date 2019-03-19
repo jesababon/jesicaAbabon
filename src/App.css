@@ -1,30 +1,37 @@
 .App {
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
   height: 100vh;
   display: grid;
   grid-gap: 5px;
-  grid-template-rows: 1fr 5fr 1fr;
-  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
  "header header"
  "main main2"
+ "form form"
  "footer footer";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 3vmin;
+h1{
+  color: #0d5;
+  font-weight: 400;
+}
+
+.profilePic {
+  /* animation: App-logo-spin infinite 50s linear; */
+  height: 60%;
   pointer-events: none;
 }
 
 .App-header {
   grid-area: header;
-  background-color: black;
+  background-color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: gray;
 }
 
 .App-bio{
@@ -39,23 +46,74 @@
   color: white;
 
 }
+
 .App-apps{
   background-color: grey;
   grid-area: main2;
   align-items: center;
-  justify-content: center;
+  /* display: grid;*/ /*brings down to center */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+form, .Contact-form{
+  grid-area: form;
+  display: inline;
+  padding: 1vw;
+  font-family: inherit;
+  font-size: 2vw;
+
+}
+
+.formBtn{
+  background-color:#0d5;
+  /* height: auto; */
+  /* line-height: normal; */
+  /* width: auto; */
+  /* font-family: inherit; */
+  font-weight: 800;
+  color: white;
+  font-size: 1vw;
+  border-radius: 25px;
+  padding: 1vh;
+
+}
+
+input[type=text], textarea{
+  width: fill;
+  padding: 1vw; 
+  /* border: 1px solid #0d5;  */
+  border-radius: 1vw; 
+  box-sizing: border-box;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  resize: all;
+  align-content: space-around;
+
+}
+
+textarea{
+  height: 10vh;
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 1px solid #0d5;
+}
+
 .App-footer{
-  background-color: black;
+  background-color: white;
   grid-area: footer;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.socialBtns{
+  height: 3vw;
+  padding: 2vw;
 }
 
 .App-link {
