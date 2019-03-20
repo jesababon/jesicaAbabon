@@ -33,12 +33,11 @@ class App extends Component {
 						</div>
 					</article>
 					<article className="App-apps">
-						<h3>Some of My apps</h3>
-						<img src={savvysapian} className="savvySapian" alt="savvysapian" />
+						<div><img src={savvysapian} className="savvySapian" alt="savvysapian" /></div>
 
-						<img src={fatalencounters} className="fatalEncounters" alt="fatalencounters" />
+						<div><img src={fatalencounters} className="fatalEncounters" alt="fatalencounters" /></div>
 						
-						<img src={maddash} className="madDash" alt="madDash" />
+						<div><img src={maddash} className="madDash" alt="madDash" /></div>
 					
 					</article>
 					<div className="Contact-form">

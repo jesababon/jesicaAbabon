@@ -1,109 +1,113 @@
 .App {
-  /* text-align: center; */
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
   font-family: 'Quicksand', sans-serif;
   background-color: white;
-  /* min-width: 100vw; */
+  min-width: 100vw;
   height: 100vh;
-  position: relative;
-  /* align-content: stretch; */
-  padding: 1vw;
-  /* margin: 1vw; */
+  /* padding-right: 1rem; */
+  /* padding: 3rem; */
   display: grid;
   grid-gap: .5vw;
-  /* grid-template-rows: 1fr 4fr 8fr 1fr; */
-  /* grid-template-columns: 1fr 4fr; */
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
- "header header"
- "main form"
- "main2 main2"
- "footer footer";
+    "header header"
+    "main form"
+    "main2 main2"
+    "footer footer";
 }
 
-h1{
+h1 {
   color: #0d5;
   font-weight: 800;
   letter-spacing: 1rem;
 }
 
 
-h2{
+h2 {
   color: grey;
   font-weight: 500;
   letter-spacing: 1rem;
 }
 
 
-.App-header {
+.App-header, header {
   grid-area: header;
   font-size: 1vh;
   color: gray;
   position: absolute;
   top: 0px;
+  height: 10%;
   width: 100%;
 }
 
 
-.App-bio{
+.App-bio {
   position: relative;
-  top: 2rem;
+  /* top: 1rem; */
   grid-area: main;
-  text-align: center;
-  padding: 1rem;
+  /* padding: 2rem; */
   color: black;
+
 }
 
 
 .profilePic {
-  height: 20vh;
+  height: 10em;
 }
 
-.myBio{
+.myBio {
   padding: 1rem;
   font-size: 4rem;
 }
 
-.App-apps{
-  grid-area: main2;
-  position: relative;
-  background-color: #0d5;
-  margin: 2rem;
-  color: black;
-  width: 80%;
-  height: 100%;
-  
-}
-
-.Contact-form, form{
+.Contact-form,
+form {
   grid-area: form;
   position: relative;
-  text-align: center;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   margin: 0 1vw 1vw 1vw;
   width: 100%;
 }
 
-label{
+.App-apps {
+  grid-area: main2;
+  position: relative;
+  background-color: #0d5;
+  color: black;
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1vw 1vw 1vw 1vw;
+
+}
+
+img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+label {
   display: grid;
   grid-auto-columns: 1fr 1fr;
-  grid-template-areas: 
-  "form1 form2";
+  grid-template-areas:
+    "form1 form2";
   text-align: start;
 
 }
-.infoInput{
+
+.infoInput {
   grid-area: form1;
 
 }
 
-.messageInput{
+.messageInput {
   grid-area: form2;
 }
 
-.formBtn{
-  background-color:#0d5;
+.formBtn {
+  background-color: #0d5;
   font-weight: 800;
   color: white;
   font-size: 1vw;
@@ -112,27 +116,29 @@ label{
 
 }
 
-input[type=text]{
+input[type=text] {
   width: 80%;
-  padding: 1vw; 
-  border-radius: 1vw; 
-  font-size:2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-size: 2vw;
 }
 
-textarea{
+textarea {
   height: 60%;
   width: 80%;
-  border-style: inset; 
+  border-style: inset;
   box-sizing: border-box;
   resize: all;
-  border-radius: 1vw; 
+  border-radius: 1vw;
   border-width: 2px;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus,
+textarea:focus {
   border: 1px solid #0d5;
 }
-.App-footer{
+
+.App-footer {
   top: 0px;
   position: relative;
   margin: 1rem;
@@ -142,9 +148,9 @@ input[type=text]:focus, textarea:focus {
   height: 1rem;
 }
 
-.socialBtns{
-  height: 2vw;
-  padding: 1vh;
+.socialBtns {
+  height: 2rem;
+  padding: 4%;
 }
 
 .App-link {
@@ -152,50 +158,72 @@ input[type=text]:focus, textarea:focus {
 }
 
 @media screen and (max-width: 800px) {
-
-  h1,h2{
-    /* margin-top: 1rem; */
-    font-size: 2vw;
-    font-weight: 800;
-    letter-spacing: 1em;
-  }
-  .App{
+  .App {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-flow: column nowrap;
-    /* justify-content: center; */
     width: 100%;
-  }
-  .App-bio, .App-apps{
-    /* margin: 1rem; */
-    padding: 2rem;
-    size: 100%;
-    max-width: 100%;
-  }
- .Contact-form, form{
-    padding: 1rem;
-    margin: 0px;
-    max-width: 100%;
-
-  }
-  label{
-    height: 100%;
-    padding: 0px;
-    /* margin: 0px; */
-
-  }
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
-}
-  /* article{
-    display:block;
-    position: relative;
-    top: 2vh;
-    bottom: 2vh;
-  } */
-  .App-footer{
     /* position: absolute; */
+  }
+
+  .App-header {
+    position: relative;
+    top: 0px;
+    font-size: 10%;
+    font-weight: 800;
+  }
+
+  .App-bio{
+    position: relative;
+  }
+
+  .App-apps{
+    top: inherit;
+    min-height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Contact-form,
+form {
+  margin:0px;
+  padding: 0px;
+}
+
+  input[type=text] {
+    width: 80%;
+    padding: 0;
+    font-size: 2vw;
+  }
+  
+  textarea {
+    height: 50%;
+    width: 80%;
+  }
+
+  label{
+    display: flex;
+    width: 100%;
+    /* max-height: 30%; */
+    font-size: 10%;
+    /* margin: 0px;
+    padding: 0px; */
+    justify-content: center;
+    /* align-content: center; */
+  }
+
+  .myBio {
+    font-size: 20%;
+  }
+
+  .socialBtns {
+    height: 1rem;
+  }
+
+  .App-footer {
+    position: relative;
     bottom: 0;
     width: 100%
   }
