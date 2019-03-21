@@ -14,34 +14,34 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<h1>JESICA ABABON</h1>
+					<h1>JESICA ABABON</h1><br />
 					<h2>Full Stack Web Developer</h2>
 				</header>
-					<article className="App-bio">
+					<div className="App-bio">
 						<div>
 							<img src={profilePic} className="profilePic" alt="myFace" />
 							<div className="myBio">
-							<h5>
+							
 								Hi! I’m Jes, a web developer that loves finding simple solutions
 								to complicated problems.
 								<br />
 								<br />
 								Experienced in HTML, CSS, JavaScript (Node.js, Express.js,
 								React.js), API integrations, and postgreSQL.
-							</h5>
+							
 							</div>
 						</div>
-					</article>
-					<article className="App-apps">
-						<div><img src={savvysapian} className="savvySapian" alt="savvysapian" /></div>
+					</div>
+					<div className="App-apps">
+						<div><img src={savvysapian} className="appImg" alt="savvysapian" /></div>
 
-						<div><img src={fatalencounters} className="fatalEncounters" alt="fatalencounters" /></div>
+						<div><img src={fatalencounters} className="appImg" alt="fatalencounters" /></div>
 						
-						<div><img src={maddash} className="madDash" alt="madDash" /></div>
+						<div><img src={maddash} className="appImg" alt="madDash" /></div>
 					
-					</article>
+					</div>
 					<div className="Contact-form">
-						<h3>Want to contact me?</h3>
+						<h3>Looking for a new friend? Send me a message:</h3>
 						<form>
 							<label>
 								<div className='infoInput'>
