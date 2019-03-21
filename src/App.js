@@ -5,7 +5,6 @@ import MyApps from "./myApps";
 import Bio from "./Bio";
 import Contact from "./Contact";
 import Footer from "./Footer";
-
 import "./App.css";
 
 class App extends Component {
