@@ -11,24 +11,51 @@ class Bio extends Component {
 					solutions to complicated problems.
 					<br />
 					My business operations experience has trained me in the arts of
-					teamwork, perserverance and adaptability.
+					teamwork and adaptability.
 					<br />
 					I am always searching for opportunities to grow my skills and make new
-					connections. I am fascinated by the intersection of art, culture and
+					connections. I am fascinated by the intersection of culture and
 					technology.
 					<br />
 					When I'm not coding, I'm drawing, dining or walking my dog.
 				</div>
 				<div className="experience">
-					HTML/CSS
-					<br />
-					CSS
-					<br />
-					JavaScript (Node.js, Express.js, React.js)
-					<br />
-					API integrations
-					<br />
-					postgreSQL
+						<table>
+							<tr>
+								<th>PROGRAMMING</th>
+								<th>OTHER</th>
+							</tr>
+							<tr>
+								<td>HTML5</td>
+								<td>AGILE</td>
+							</tr>
+							<tr>
+								<td>CSS3</td>
+								<td>GIT Version Control</td>
+							</tr>
+							<tr>
+								<td>
+									JavaScript
+									<pre>
+										<ul>
+											<li>Node.js</li>
+											<li>Express.js</li>
+											<li>React.js</li>
+										</ul>
+									</pre>
+								</td>
+								<td>Adobe Creative Suite</td>
+							</tr>
+							<tr>
+								<td>API Integrations</td>
+								<td>GITHUB</td>
+							</tr>
+							<tr>
+								<td>postgreSQL</td>
+								<td>Sketch App</td>
+							</tr>
+						</table>
+
 				</div>
 			</div>
 		);

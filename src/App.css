@@ -14,8 +14,8 @@
   max-width: 100%;
   height: 100vh;
   display: grid;
-  grid-gap: .5vw;
-  grid-template-columns: 1fr 2fr;
+  grid-gap: 1vw;
+  grid-template-columns: auto auto auto;
   grid-row-gap: auto;
   grid-template-areas:
     "header header"
@@ -24,14 +24,13 @@
     "footer footer";
 }
 
-h1 {
+h1, th {
   color: #0d5;
   font-weight: 800;
-  letter-spacing: 1rem;
   margin: 0;
 }
 
-h2 {
+h2, td {
   color: grey;
   font-weight: 500;
   margin: 0;
@@ -45,26 +44,57 @@ h2 {
   top: 0px;
   width: 100%;
   display: block;
+  letter-spacing: 1rem;
+
 }
 
 .App-bio {
   display: flex;
   position: relative;
-  padding-top: 2%;
+  /* padding-top: 2%; */
   grid-area: main;
   color: black;
   font-size: 3rem;
   text-align: justify;
+
 }
 
 .profilePic {
   height: 10em;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.myBio{
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 .experience{
   text-align: start;
   font-weight: bold;
-  margin: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
+
+}
+
+td,
+th, tr {
+  padding-bottom: 2%;
+  padding-right: 35%;
+}
+
+table {
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background: linear-gradient(-85deg, white, #0d5);
+}
+
+li{
+  margin-left: 2rem;
 }
 
 .myApps {
@@ -96,7 +126,7 @@ h2 {
   padding: 4%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
    .App {
     max-width: 100%;
     max-height: 100%;
@@ -108,13 +138,14 @@ h2 {
     display: flex;
     position: relative;
     flex-direction: column;
-    font-size: 1rem;
-    padding: 4%;
+    font-size: 1em;
+    padding: 5%;
   } 
 
   img.profilePic {
     max-width: 10rem;
     align-self: center;
+    margin-bottom: 3%;
   }
 
   .App-header {
@@ -132,6 +163,14 @@ h2 {
 
   .appImg {
     max-width: 80%;
+  }
+
+  .myBio {
+    font-size: 20%;
+    text-align: justify;
+    line-height: 1rem;
+    margin: 3%;
+
   }
 
  /*
@@ -160,9 +199,7 @@ h2 {
     justify-content: center;
   }
 
-  .myBio {
-    font-size: 20%;
-  }
+ 
 
   .socialBtns {
     height: 1rem;
