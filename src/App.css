@@ -1,6 +1,12 @@
 /* CSS Reset */
-* { margin:0; padding:0; font-size:100%; line-height:1; }
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+}
 
+/* CODE STARTS */
 .App {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
@@ -10,9 +16,10 @@
   display: grid;
   grid-gap: .5vw;
   grid-template-columns: 1fr 2fr;
+  grid-row-gap: auto;
   grid-template-areas:
     "header header"
-    "main form"
+    "main main"
     "main2 main2"
     "footer footer";
 }
@@ -24,16 +31,13 @@ h1 {
   margin: 0;
 }
 
-
 h2 {
   color: grey;
   font-weight: 500;
   margin: 0;
-
 }
 
-
-.App-header{
+.App-header {
   grid-area: header;
   margin: 2%;
   font-size: 3rem;
@@ -41,37 +45,26 @@ h2 {
   top: 0px;
   width: 100%;
   display: block;
-  
 }
 
-
 .App-bio {
+  display: flex;
   position: relative;
   padding-top: 2%;
   grid-area: main;
   color: black;
-
+  font-size: 3rem;
+  text-align: justify;
 }
-
 
 .profilePic {
-  height: 20em;
+  height: 10em;
 }
 
-.myBio {
-  padding: 0 10%;
-  font-size: 3rem;
-}
-
-.Contact-form,
-form {
-  grid-area: form;
-  position: relative;
-  font-size: 3rem;
-}
-
-h3{
-  font-size: 3rem;
+.experience{
+  text-align: start;
+  font-weight: bold;
+  margin: 5%;
 }
 
 .myApps {
@@ -84,15 +77,123 @@ h3{
   text-align: left;
   display: flex;
   justify-content: space-evenly;
-
 }
 
-img {
-  height: 100%;
+.appImg {
+  min-height: 100%;
+}
+
+.App-footer {
+  position: relative;
+  grid-area: footer;
+  display: flex;
+  /* height: 10px; */
+  justify-content: center;
+}
+
+.socialBtns {
+  height: 2rem;
+  padding: 4%;
+}
+
+@media screen and (max-width: 800px) {
+   .App {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline flex;
+
+  }
+
+  .App-bio{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 4%;
+  } 
+
+  img.profilePic {
+    max-width: 10rem;
+    align-self: center;
+  }
+
+  .App-header {
+    font-size: .5rem;
+    font-weight: 800;
+    height: 3%;
+  }
+
+  .myApps {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+  }
+
+  .appImg {
+    max-width: 80%;
+  }
+
+ /*
+
+  h3 {
+    font-size: 20%;
+  }
+
+  .profilePic {
+    height: 8em;
+  }
+
+
+  input[type=text] {
+    padding: 0;
+    font-size: 2vw;
+  }
+
+  textarea {
+    height: 50%;
+  }
+
+  label {
+    display: flex;
+    font-size: 10%;
+    justify-content: center;
+  }
+
+  .myBio {
+    font-size: 20%;
+  }
+
+  .socialBtns {
+    height: 1rem;
+  }
+
+  .App-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  } */
+
+  /* .Contact-form, label{
+  margin: 2%;
+}
+
+.formBtn {
+  font-size: 1em;
+} */
 }
 
 
-label {
+/* CONTACT FORM AREA */
+
+/* .Contact-form,
+form {
+  grid-area: form;
+  position: relative;
+  font-size: 3rem;
+} */
+
+/* label {
   display: grid;
   grid-auto-columns: 1fr 1fr;
   grid-template-areas:
@@ -145,93 +246,4 @@ textarea:focus {
   -o-transition: all 0.30s ease-in-out;
   border: 1vw solid #0d5;
   outline: none;
-}
-
-.App-footer {
-  position: relative;
-  grid-area: footer;
-  display: flex;
-  /* height: 10px; */
-  justify-content: center;
-}
-
-.socialBtns {
-  height: 2rem;
-  padding: 4%;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
-@media screen and (max-width: 800px) {
-  .App {
-    display: flex;
-    flex-flow: column wrap;
-    width: 80%;
-    height: 100vh;
-  }
-
-  .App-header {
-    font-size: .5rem;
-    font-weight: 800;
-    height: 3%;
-  }
-
-  .myApps{
-    display: flex;
-    justify-content: space-between;
-    margin: 2%;
-  }
-
-  .appImg{
-    width: 80%;
-  }
-
-.Contact-form, label{
-  margin: 2%;
-}
-
-.formBtn {
-  font-size: 1em;
-}
-
-h3{
-  font-size: 20%;
-}
-
-.profilePic{
-  height: 8em;
-}
-
-
-  input[type=text] {
-    padding: 0;
-    font-size: 2vw;
-  }
-  
-  textarea {
-    height: 50%;
-  }
-
-  label{
-    display: flex;
-    font-size: 10%;
-    justify-content: center;
-  }
-
-  .myBio {
-    font-size: 20%;
-  }
-
-  .socialBtns {
-    height: 1rem;
-  }
-
-  .App-footer {
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
-}
+} */
