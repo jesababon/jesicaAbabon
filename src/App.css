@@ -87,6 +87,7 @@ th, tr {
 table {
   table-layout: fixed;
   white-space: nowrap;
+  border-spacing: .5rem;
 }
 
 tr:nth-child(even) {
