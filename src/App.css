@@ -54,7 +54,7 @@ h2, td {
   /* padding-top: 2%; */
   grid-area: main;
   color: black;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   text-align: justify;
 
 }
@@ -134,7 +134,7 @@ li{
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
    .App {
     max-width: 100%;
     max-height: 100%;
