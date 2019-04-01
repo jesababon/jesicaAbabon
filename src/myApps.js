@@ -7,11 +7,24 @@ class MyApps extends Component {
 	render() {
 		return (
             <div className="myApps">
-            <div><img src={savvysapian} className="appImg" alt="savvysapian" /></div>
+            <div>
+            <a href={`https://github.com/jesababon/savvysapian`} target="_blank" rel="noopener noreferrer">
+                <img src={savvysapian} className="appImg" alt="savvysapian" />
+            </a>
+            </div>
 
-            <div><img src={fatalencounters} className="appImg" alt="fatalencounters" /></div>
+            <div>
+            <a href={`https://github.com/jesababon/fea`} target="_blank" rel="noopener noreferrer">
+                <img src={fatalencounters} className="appImg" alt="fatalencounters" />
+            </a>
+                
+            </div>
             
-            <div><img src={maddash} className="appImg" alt="madDash" /></div>
+            <div>
+            <a href={`https://github.com/jesababon/maddash`} target="_blank" rel="noopener noreferrer">
+                <img src={maddash} className="appImg" alt="madDash" />
+            </a>    
+            </div>
         
         </div>
 		);
