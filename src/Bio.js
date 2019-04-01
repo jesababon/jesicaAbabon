@@ -21,6 +21,7 @@ class Bio extends Component {
 				</div>
 				<div className="experience">
 						<table>
+							<tbody>
 							<tr>
 								<th>PROGRAMMING</th>
 								<th>OTHER</th>
@@ -54,6 +55,7 @@ class Bio extends Component {
 								<td>postgreSQL</td>
 								<td>Sketch App</td>
 							</tr>
+							</tbody>
 						</table>
 
 				</div>
