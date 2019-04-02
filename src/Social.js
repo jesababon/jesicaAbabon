@@ -3,10 +3,10 @@ import twitter from "./images/twitter.svg";
 import github from "./images/github.svg";
 import linkedin from "./images/linkedin.svg";
 
-class Footer extends Component {
+class Social extends Component {
 	render() {
 		return (
-			<footer className="App-footer">
+			<div className="App-social">
 
 				<a href={`https://www.linkedin.com/in/jesababon/`} target="_blank" rel="noopener noreferrer">
 				<img src={linkedin} className="socialBtns" alt="linkedin" />
@@ -19,9 +19,9 @@ class Footer extends Component {
 				<a href={`https://github.com/jesababon`} target="_blank" rel="noopener noreferrer">
 				<img src={github} className="socialBtns" alt="github" />
 				</a>
-			</footer>
+			</div>
 		);
 	}
 }
 
-export default Footer;
+export default Social;

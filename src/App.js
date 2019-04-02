@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import Header from "./Header";
+import Social from "./Social";
 import MyApps from "./myApps";
 import Bio from "./Bio";
 // import Contact from "./Contact";
-import Footer from "./Footer";
 import "./App.css";
 
 class App extends Component {
@@ -12,10 +12,10 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header />
+				<Social />
 				<Bio />
 				<MyApps />
 				{/* <Contact /> */}
-				<Footer />
 			</div>
 		);
 	}

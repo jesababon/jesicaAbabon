@@ -10,12 +10,15 @@ class Bio extends Component {
 					Hi! I’m Jes, a full stack web developer that loves finding simple
 					solutions to complicated problems.
 					<br />
+					<br />
 					My business operations experience has trained me in the arts of
 					teamwork and adaptability.
+					<br />
 					<br />
 					I am always searching for opportunities to grow my skills and make new
 					connections. I am fascinated by the intersection of culture and
 					technology.
+					<br />
 					<br />
 					When I'm not coding, I'm drawing, dining or walking my dog.
 				</div>
