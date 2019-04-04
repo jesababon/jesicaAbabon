@@ -387,13 +387,15 @@ th {
 /* MY CODE STARTS */
 .App {
   text-align: center;
+  box-sizing: initial;
   font-family: 'Quicksand', sans-serif;
   background-color: white;
-  max-width: 100%;
-  height: 100vh;
+  width: 100%;
+  min-height: 100%;
   display: grid;
-  grid-gap: 1vw;
+  grid-gap: 10% 0;
   grid-template-columns: auto auto auto;
+  grid-template-rows: 10% auto 50%;
   grid-row-gap: auto;
   grid-template-areas:
     "header social"
@@ -428,7 +430,6 @@ h2, td {
   grid-area: social;
   display: flex;
   justify-content: center;
-  box-sizing: initial;
   line-height: 0;
   width: 200px;
   height: 120px;
@@ -436,7 +437,6 @@ h2, td {
 }
 
 .socialBtns {
-  width: auto;
   height: 100%;
   padding: 5rem;
   letter-spacing: 3rem;
@@ -447,45 +447,34 @@ h2, td {
 }
 
 .App-bio {
-  display: flex;
+  display: grid;
   position: relative;
   grid-area: main;
   color: black;
-  font-size: .5rem;
-  text-align: justify;
-
+  grid-gap: 1vw;
+  grid-template-columns: auto 30% auto;
 }
 
-.profilePic {
-  height: 10em;
+.profilePic{
   margin-right: 2%;
   margin-left: 2%;
-  min-height: 80%;
-
+  width: 100%;
 }
 
 .myBio{
-  margin-right: 2%;
-  margin-left: 2%;
+  padding: 2%;
   font-size: 4rem;
-  max-width: 50%;
+  text-align: justify;
 
 }
 
 .experience{
   text-align: start;
-  font-weight: bold;
-  max-width: 100%;
-  max-height: 40%;
-  margin-right: 2%;
-  margin-left: 2%;
-
+  font-size: 4rem;
 }
 
 th, tr {
-  padding-bottom: 2%; 
-  /* width: 100%; */
- 
+  padding-bottom: 2%;  
 }
 
 td {
@@ -495,7 +484,7 @@ td {
 
 table {
   table-layout: fixed;
-  width: 100rem;
+  /* width: 100rem; */
   font-size: 4rem;
   border-collapse: separate;
   border-spacing: 2rem 0;
@@ -514,10 +503,9 @@ li{
 div.myApps {
   position: relative;
   grid-area: main2;
+  height: 100%;
   background: linear-gradient(85deg, white, #0d5);
-  width: 100%;
-  max-height: 80%;
-  padding: 2%;
+  padding: 2% 0;
   text-align: left;
   display: flex;
   justify-content: space-evenly;
