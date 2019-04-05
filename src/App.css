@@ -390,7 +390,7 @@ th {
   box-sizing: initial;
   font-family: 'Quicksand', sans-serif;
   background-color: white;
-  width: 100%;
+  width: 100% !important;
   min-height: 100%;
   display: grid;
   grid-gap: 10% 0;
