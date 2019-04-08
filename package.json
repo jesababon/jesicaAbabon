@@ -2,7 +2,7 @@
   "name": "jes-personal-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jesababon.github.io/aboutme/",
+  "homepage": "http://jesababon.github.io/aboutme/",
   "dependencies": {
     "axios": "^0.18.0",
     "braces": "^2.3.2",
