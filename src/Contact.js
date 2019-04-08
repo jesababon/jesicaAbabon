@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 
 
-const API_PATH = 'http://localhost:3080/api/contact/';
+const API_PATH = 'https://localhost:3080/api/contact/';
 
 class Contact extends Component {
 	constructor(props) {
