@@ -522,7 +522,7 @@ li{
 }
 
 .appImages img{
-  height: 400px;
+  height: auto;
 }
 
 @media screen and (max-device-width : 600px){
@@ -590,9 +590,9 @@ li{
   }
 
 .appImages{
-    display: inline-block !important;
-    margin: 2%;
-    justify-content: center !important;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between !important;
     text-align: center !important;
   }
 
