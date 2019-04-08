@@ -1,0 +1,22 @@
+{
+  "main.css": "/aboutme/static/css/main.e7ff186c.chunk.css",
+  "main.js": "/aboutme/static/js/main.5a553671.chunk.js",
+  "main.js.map": "/aboutme/static/js/main.5a553671.chunk.js.map",
+  "runtime~main.js": "/aboutme/static/js/runtime~main.8852904a.js",
+  "runtime~main.js.map": "/aboutme/static/js/runtime~main.8852904a.js.map",
+  "static/css/2.70efdf57.chunk.css": "/aboutme/static/css/2.70efdf57.chunk.css",
+  "static/js/2.5463c79c.chunk.js": "/aboutme/static/js/2.5463c79c.chunk.js",
+  "static/js/2.5463c79c.chunk.js.map": "/aboutme/static/js/2.5463c79c.chunk.js.map",
+  "index.html": "/aboutme/index.html",
+  "precache-manifest.6480eaf9ea7004d063954ad299f343e6.js": "/aboutme/precache-manifest.6480eaf9ea7004d063954ad299f343e6.js",
+  "service-worker.js": "/aboutme/service-worker.js",
+  "static/css/2.70efdf57.chunk.css.map": "/aboutme/static/css/2.70efdf57.chunk.css.map",
+  "static/css/main.e7ff186c.chunk.css.map": "/aboutme/static/css/main.e7ff186c.chunk.css.map",
+  "static/media/fatalencounters.gif": "/aboutme/static/media/fatalencounters.9ec9bfce.gif",
+  "static/media/github.svg": "/aboutme/static/media/github.1bb02710.svg",
+  "static/media/linkedin.svg": "/aboutme/static/media/linkedin.5b238434.svg",
+  "static/media/maddash.gif": "/aboutme/static/media/maddash.a515d467.gif",
+  "static/media/profilePic.png": "/aboutme/static/media/profilePic.b08001e0.png",
+  "static/media/savvysapian.gif": "/aboutme/static/media/savvysapian.a9e93e56.gif",
+  "static/media/twitter.svg": "/aboutme/static/media/twitter.631cd566.svg"
+}
