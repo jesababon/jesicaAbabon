@@ -7,6 +7,7 @@ class MyApps extends Component {
 	render() {
 		return (
             <div className="myApps">
+            <h2>Apps I Developed</h2>
             <div>
             <a href={`https://github.com/jesababon/savvysapian`} target="_blank" rel="noopener noreferrer">
                 <img src={savvysapian} className="appImg" alt="savvysapian" />
