@@ -502,19 +502,31 @@ li{
   /* margin-left: 2rem; */
 }
 
-div.myApps {
+.myApps {
   position: relative;
   grid-area: main2;
   height: 1fr;
   background: linear-gradient(85deg, white, #0d5);
-  padding: 2% 0;
-  text-align: left;
-  display: flex;
-  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.myApps h2{
+  display: block;
+  font-size: 5rem;
+}
+
+.appImages{
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  grid-gap: 20px;
+  width: auto;
+  height: 80%;
 }
 
 .appImg {
-  height: 80%;
+  height:80%;
 }
 
 @media screen and (max-device-width : 600px){
@@ -571,7 +583,12 @@ div.myApps {
     align-self: center;
   }
 
-  .myApps{
+  .myApps h2{
+    display: block;
+    font-size: 100%;
+  }
+
+.appImages{
     display: inline-block !important;
     margin: 2%;
     justify-content: center !important;
