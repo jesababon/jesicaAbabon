@@ -8,11 +8,11 @@ class MyApps extends Component {
 	render() {
 		return (
             <div className="myApps">
-                <div><h2>I Build My Apps Using:</h2>
-                <img src={skillLogos} alt="skillLogos" width="30%"/>
+                <div>
+                <img src={skillLogos} className="skillLogos" alt="skillLogos" width="30%"/>
                 </div>
                 <br />
-                
+
                 <div className="appImages">
 
                     <a href={`https://github.com/jesababon/savvysapian`} target="_blank" rel="noopener noreferrer">

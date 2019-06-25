@@ -22,6 +22,8 @@ h1, th {
   color: #0d5;
   font-weight: 800;
   margin: 0px;
+  text-shadow: gray 2px 2px 0;
+  letter-spacing: 5px;
 }
 
 h2, td {
@@ -34,6 +36,7 @@ h2, td {
   grid-area: header;
   top: 0px;
   display: block;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 .App-footer {
@@ -43,6 +46,8 @@ h2, td {
   background-color: white;
   bottom: 0px;
   width: 100vw;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
 }
 
 .App-social {
@@ -52,11 +57,11 @@ h2, td {
 }
 
 .socialBtns {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .socialBtns:hover{
-  filter: drop-shadow(12px 12px 7px rgba(0, 221, 85, 0.4));
+  filter: drop-shadow(12px 12px 7px forestgreen);
 }
 
 .App-bio {
@@ -106,16 +111,17 @@ table {
 }
 
 tr:nth-child(even) {
-  background: linear-gradient(-85deg, white, #0d5);
+  /* background: linear-gradient(-85deg, white, #0d5); */
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 .myApps {
   position: relative;
   grid-area: main2;
-  background: linear-gradient(85deg,#0d5, white);
+  /* background-image: linear-gradient(85deg,#0d5 0%, white 100%); */
   height: fit-content;
+  margin-bottom: 40px;
 }
-
 .appImages{
   display: flex;
   justify-content: space-evenly;
@@ -130,22 +136,21 @@ tr:nth-child(even) {
 
 @media screen and (max-width : 600px){
 
-  .App{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    max-width: 95%;
-  }
-
   .App-header{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     font-size: 1rem;
     letter-spacing: 0;
-    display: block;
     margin-bottom: 20px;
+    z-index: 1;
   }
 
-  .App-bio{
+  div.App-bio{
     display: flex;
+    position: relative;
+    margin-top: 20%;
     flex-direction: column;
   }
 
@@ -165,7 +170,7 @@ tr:nth-child(even) {
     border-spacing: .5rem 0;
   }
 
-  img.socialBtns, .profilePic{
+ .profilePic{
     width: 50%;
     height: auto;
     padding: 0;
@@ -184,6 +189,14 @@ tr:nth-child(even) {
     justify-content: space-evenly;
     text-align: center;
     padding: 0;
+  }
+
+  .skillLogos{
+    width: 80%;
+  }
+
+  div.App.social{
+    height: 50px;
   }
 
 }
