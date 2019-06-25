@@ -9,6 +9,4 @@ This is the code for my personal site.
 This my personal website where I showcase my dev projects.
 
 
-**Note: This may soon also contain examples of my artwork.**
-
-I make things, manually and digitally.
+**Welcome. I make things, manually and digitally.**
