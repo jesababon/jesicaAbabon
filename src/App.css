@@ -131,7 +131,9 @@ tr:nth-child(even) {
 .appImages img{
   width: 60%;
   margin: 5%;
-
+}
+.appImages img:hover{
+  filter: drop-shadow(12px 12px 7px gray);
 }
 
 @media screen and (max-width : 600px){
