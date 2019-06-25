@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a9e93e568150f3e3a1e86e18c2a5b826",
-    "url": "/aboutme/static/media/savvysapian.a9e93e56.gif"
+    "revision": "a515d46766993fc747e653ddd4de578c",
+    "url": "/aboutme/static/media/maddash.a515d467.gif"
   },
   {
-    "revision": "adb8e85ce1a6e6c3ef17",
-    "url": "/aboutme/static/css/main.d428af1e.chunk.css"
+    "revision": "b9229e106e94b555aaaa",
+    "url": "/aboutme/static/css/main.4ac5a879.chunk.css"
   },
   {
     "revision": "db8764ea3a3f6f7a6bb7",
@@ -16,20 +16,24 @@ self.__precacheManifest = [
     "url": "/aboutme/static/media/linkedin.5b238434.svg"
   },
   {
-    "revision": "40c7ff2a1cafc2292149",
-    "url": "/aboutme/static/js/2.5463c79c.chunk.js"
+    "revision": "c604e84f3b2c4aadb43b",
+    "url": "/aboutme/static/js/2.5c2caa89.chunk.js"
   },
   {
     "revision": "9ec9bfce0cb45354c18b5230e54a2175",
     "url": "/aboutme/static/media/fatalencounters.9ec9bfce.gif"
   },
   {
-    "revision": "adb8e85ce1a6e6c3ef17",
-    "url": "/aboutme/static/js/main.4698d4c9.chunk.js"
+    "revision": "a9e93e568150f3e3a1e86e18c2a5b826",
+    "url": "/aboutme/static/media/savvysapian.a9e93e56.gif"
   },
   {
-    "revision": "a515d46766993fc747e653ddd4de578c",
-    "url": "/aboutme/static/media/maddash.a515d467.gif"
+    "revision": "b9229e106e94b555aaaa",
+    "url": "/aboutme/static/js/main.e4c21764.chunk.js"
+  },
+  {
+    "revision": "715f94406ee49d8d5846814132dfb13a",
+    "url": "/aboutme/static/media/skillLogos.715f9440.png"
   },
   {
     "revision": "b08001e065e765e7436dd778cf1cc2eb",
@@ -44,11 +48,11 @@ self.__precacheManifest = [
     "url": "/aboutme/static/media/github.1bb02710.svg"
   },
   {
-    "revision": "40c7ff2a1cafc2292149",
+    "revision": "c604e84f3b2c4aadb43b",
     "url": "/aboutme/static/css/2.de4c8a3d.chunk.css"
   },
   {
-    "revision": "3a2323e7c64362dacdece030b7bc7ae1",
+    "revision": "da250adfbbae35197f29ed2b1c1fea8e",
     "url": "/aboutme/index.html"
   }
 ];
