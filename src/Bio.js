@@ -15,12 +15,11 @@ class Bio extends Component {
 					teamwork and adaptability.
 					<br />
 					<br />
-					I am always searching for opportunities to grow my skills and make new
-					connections. I am fascinated by the intersection of culture and
-					technology.
+					I am seeking opportunities to grow my skills and make new
+					connections.
 					<br />
 					<br />
-					When I'm not coding, I'm drawing, dining or walking my dog.
+					When I'm not coding, I'm drawing, dining or walking my very good dog.
 				</div>
 				<div className="experience">
 						<table>
