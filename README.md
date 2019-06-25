@@ -6,14 +6,9 @@ This is the code for my personal site.
 
 ### `Apps`
 
-This site is meant to showcase my dev projects.
-
-
-### `Blog`
-
-I hope to add a personal blog to this at some point.
+This my personal website where I showcase my dev projects.
 
 
 **Note: This may soon also contain examples of my artwork.**
 
-I make things, with my hands and digitally.
+I make things, manually and digitally.
