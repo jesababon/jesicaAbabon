@@ -389,6 +389,11 @@ th {
 *, :root{
   tab-size: 0;
 }
+
+body{
+  /* -webkit-font-smoothing: anti-aliased; */
+
+}
 .App {
   text-align: center;
   box-sizing: initial;
@@ -506,8 +511,9 @@ li{
 .myApps {
   position: relative;
   grid-area: main2;
-  background: linear-gradient(85deg, white, #0d5);
+  background: linear-gradient(85deg,#0d5, white);
   padding: 20px;
+  border-top: 1px double #0d5;
 }
 
 .myApps h2{
