@@ -26,7 +26,7 @@ class Bio extends Component {
 							<tbody>
 							<tr>
 								<th>PROGRAMMING</th>
-								<th>OTHER</th>
+								<th>TOOLS</th>
 							</tr>
 							<tr>
 								<td>HTML5</td>
@@ -34,7 +34,7 @@ class Bio extends Component {
 							</tr>
 							<tr>
 								<td>CSS3</td>
-								<td>GIT Version Control</td>
+								<td>GIT</td>
 							</tr>
 							<tr>
 								<td>
