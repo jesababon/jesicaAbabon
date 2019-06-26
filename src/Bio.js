@@ -30,11 +30,11 @@ class Bio extends Component {
 							</tr>
 							<tr>
 								<td>HTML5</td>
-								<td>AGILE</td>
+								<td>GIT</td>
 							</tr>
 							<tr>
 								<td>CSS3</td>
-								<td>GIT</td>
+								<td>GITHUB</td>
 							</tr>
 							<tr>
 								<td>
@@ -47,14 +47,26 @@ class Bio extends Component {
 										</ul>
 									</pre>
 								</td>
-								<td>Adobe Creative Suite</td>
+								<td>Adobe Creative Suite
+									<pre>
+										<ul>
+											<li>Illustrator</li>
+											<li>Photoshop</li>
+											<li>XD</li>
+										</ul>
+									</pre>
+									</td>
 							</tr>
 							<tr>
 								<td>API Integrations</td>
-								<td>GITHUB</td>
+								<td>Jest Unit Testing</td>
 							</tr>
 							<tr>
 								<td>postgreSQL</td>
+								<td>Agile</td>
+							</tr>
+							<tr>
+								<td>Visual Studio Code</td>
 								<td>Sketch App</td>
 							</tr>
 							</tbody>
