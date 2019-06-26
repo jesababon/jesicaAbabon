@@ -7,7 +7,7 @@ class Bio extends Component {
 			<div className="App-bio">
 				<img src={profilePic} className="profilePic" alt="myFace" />
 				<div className="myBio">
-					Hi! I’m Jes, a full stack web developer that loves finding simple
+					I’m a full stack web developer that loves finding simple
 					solutions to complicated problems.
 					<br />
 					<br />
