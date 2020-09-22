@@ -35,49 +35,62 @@ class Contact extends Component {
 	render() {
 		return (
 			<div className="Contact-form">
-				<h3>Looking for a new friend? Send me a message:</h3>
+				<text>I am seeking opportunities to grow my skills.
+					<br />
+					<br />
+					Feel free to contact me:
+				</text>
 				<form>
-					<label>
 						<div className="infoInput">
-							<p>Name: </p>
+							<label>
+							Name: 
 							<input
-								type="text"
+							type="text"
 								name="name"
 								value={this.state.name}
 								onChange={e => this.setState({ name: e.target.value })}
 							/>
-							<p>Email: </p>
+							</label>
+							<label>
+							E-mail: 
 							<input
-								type="text"
+							type="text"
 								name="email"
 								value={this.state.email}
 								onChange={e => this.setState({ email: e.target.value })}
 							/>
-							<p>Subject: </p>
+							</label>
+						
+						<div className="messageInput">
+						<label>
+							Subject: 
 							<input
-								type="text"
+							type="text"
 								name="subject"
+								placeholder="visited jesababon.com"
 								value={this.state.subject}
 								onChange={e => this.setState({ subject: e.target.value })}
 							/>
-						</div>
-						<div className="messageInput">
-							<p>Message: </p>
+							</label>
+
+							<label>
 							<textarea
 								name="message"
+								placeholder="Type message here."
 								value={this.state.message}
 								onChange={e => this.setState({ message: e.target.value })}
 							/>
-							<p>
+							
+							<br />
 								<input
 									type="submit"
 									value="SUBMIT"
 									className="formBtn"
 									onClick={e => this.handleFormSubmit(e)}
 								/>
-							</p>
+							</label> 
 						</div>
-					</label>
+						</div>
 					<div>
 						{this.state.mailSent && <div>Thank you for contacting me.</div>}
 					</div>

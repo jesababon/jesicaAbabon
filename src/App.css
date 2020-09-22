@@ -13,6 +13,7 @@
   grid-template-areas:
     "header"
     "main"
+    "contact"
     "main2"
     "footer";
 }
@@ -77,11 +78,20 @@ h2, td {
   margin: 10%;
 }
 
-.myBio {
+.myBio, text {
   text-align: left;
   padding: 5% 0;
   font-size: 10px; 
-  font-size: 1.5vw;
+  font-size: 2vh;
+  width: 30vw;
+
+}
+
+.Contact-form text {
+  text-align: left;
+  padding: 2% 0;
+  font-size: 10px; 
+  font-size: 2vh;
   width: 30vw;
 
 }
@@ -116,6 +126,36 @@ tr:nth-child(even) {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
+.Contact-form{
+  grid-area: contact;
+  display: flex;
+  text-align: left;
+  padding: 0 5%;
+  width: 100%;
+}
+
+label{
+  float: left;
+  /* width: 50%; */
+  padding: 2vh;
+}
+
+input{
+float: right;
+width: 70%;
+}
+
+textarea{
+  float: right;
+  padding: 1vh;
+  width: 100%;
+}
+
+.formBtn{
+  width: 50%;
+}
+
+
 .myApps {
   position: relative;
   grid-area: main2;
@@ -136,6 +176,21 @@ tr:nth-child(even) {
   filter: drop-shadow(12px 12px 7px gray);
 }
 
+.savvyImg:hover .overlaySavvy {
+  opacity: 1;
+}
+.overlaySavvy {
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
 @media screen and (max-width : 800px){
 
   .App-header{

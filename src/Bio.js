@@ -7,19 +7,12 @@ class Bio extends Component {
 			<div className="App-bio">
 				<img src={profilePic} className="profilePic" alt="myFace" />
 				<div className="myBio">
-					I’m a full stack web developer that loves finding simple
+					<text>I’m a full stack web developer that loves finding simple
 					solutions to complicated problems.
 					<br />
 					<br />
-					My business operations experience has trained me in the arts of
-					teamwork and adaptability.
-					<br />
-					<br />
-					I am seeking opportunities to grow my skills and make new
-					connections.
-					<br />
-					<br />
 					When I'm not coding, I'm drawing, dining or walking my very good dog.
+					</text>
 				</div>
 				<div className="experience">
 						<table>

@@ -14,9 +14,13 @@ class MyApps extends Component {
                 <br />
 
                 <div className="appImages">
+                    <div class="overlaySavvy">
+                    <div class="text">HTML, CSS, JavaScript, Express.js, and React.js. API integrations include Artsy's API (JSON), Artbeat's API
+                    (XML), and Google Maps API.</div>
+                    </div>
 
                     <a href={`https://github.com/jesababon/savvysapian`} target="_blank" rel="noopener noreferrer">
-                        <img src={savvysapian} className="appImg" alt="savvysapian" />
+                        <img src={savvysapian} className="savvyImg" alt="savvysapian" />
                     </a>
 
                     <a href={`https://github.com/jesababon/fea`} target="_blank" rel="noopener noreferrer">
